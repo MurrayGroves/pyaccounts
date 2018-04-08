@@ -3,8 +3,8 @@ import json
 import hashlib
 import os
 
-"""Login to an account with user defined details:"""
 def loginui():
+    """Login to an account with user defined details:"""
     if os.path.exists("Data") == False:
         os.mkdir("Data")
     user = input("What's your username?\n")
@@ -24,8 +24,8 @@ def loginui():
         raise ValueError('Incorrect username or password')
         return
 
-"""Login to an account with software defined details"""
 def login(user, password):
+    """Login to an account with software defined details"""
     if os.path.exists("Data") == False:
         os.mkdir("Data")
     f = open("Data/{}.json".format(user), "r")

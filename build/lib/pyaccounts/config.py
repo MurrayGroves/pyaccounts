@@ -1,7 +1,7 @@
 import json
 
-"""Write config data to user file"""
 def writeconf(user, name, value):
+    """Write config data to user file"""
     path = "Data/{}.json".format(user)
     old = json.loads(open(path).read())
     data = {name: value}
@@ -10,8 +10,8 @@ def writeconf(user, name, value):
     json.dump(new, f)
     f.close()
 
-"""Read config value from user file"""
 def readconf(user, value):
+    """Read config value from user file"""
     path = "Data/{}.json".format(user)
     f = open(path).read()
     read = json.loads(f)

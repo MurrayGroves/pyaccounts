@@ -3,8 +3,8 @@ import time
 import os
 import hashlib
 
-"""Register an account with user defined data"""
 def regui():
+    """Register an account with user defined data"""
     if os.path.exists("Data") == False:
         os.mkdir("Data")
     user = input("What do you want your username to be?\n")
@@ -18,8 +18,8 @@ def regui():
     f.close()
     print("Account created")
 
-"""Register an account with software defined data"""
 def reg(user, password):
+    """Register an account with software defined data"""
     if os.path.exists("Data") == False:
         os.mkdir("Data")
     m = hashlib.md5()
