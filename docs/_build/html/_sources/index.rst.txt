@@ -12,7 +12,6 @@ Pyaccounts is a python module designed to make integrating user accounts into yo
    :maxdepth: 2
    
    login.rst
-   register.rst
    
 
 

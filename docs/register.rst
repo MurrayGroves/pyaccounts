@@ -1,0 +1,5 @@
+========
+Register
+========
+
+.. data:: registerui(#)
