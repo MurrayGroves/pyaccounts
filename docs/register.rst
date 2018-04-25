@@ -3,6 +3,9 @@ Register
 ========
 
 .. data:: registerui(#)
+
+.. note:: The # in the brackets is not meant to be used, readthedocs won't let me do two brackets by themselves.
+
 Use this when you don't have the details the user wants to sign up with.
 
 .. code-block:: python
