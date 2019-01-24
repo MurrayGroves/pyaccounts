@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Register" href="register.html" />
     <link rel="prev" title="Welcome to pyaccounts’s documentation!" href="index.html" /> 
 
   
@@ -79,9 +80,8 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Login</a><ul class="simple">
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Login</a></li>
+<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a></li>
 </ul>
 
             
@@ -157,14 +157,19 @@
 <p class="first admonition-title">Note</p>
 <p class="last">The # in the brackets is not meant to be used, readthedocs won’t let me do two brackets by themselves.</p>
 </div>
-<p>Use this when you don’t have the user’s details, it will prompt them to enter their details.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">try</span><span class="p">:</span>
-        <span class="n">loginui</span><span class="p">()</span>
-        <span class="c1">#Runs if they login correctly.</span>
-<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-        <span class="c1">#Runs if they fail to login.</span>
-</pre></div>
-</div>
+<p>Use this when you don’t have the user’s details, it will prompt them to enter their details.
+Raises a ValueError when login failed.</p>
+<p>Example:
+.. code-block:: python</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>try:</dt>
+<dd>loginui()
+#Runs if they login correctly.</dd>
+<dt>except ValueError:</dt>
+<dd>#Runs if they fail to login.</dd>
+</dl>
+</div></blockquote>
 <dl class="data">
 <dt>
 <code class="descname">login</code><span class="sig-paren">(</span><em>user</em>, <em>password</em><span class="sig-paren">)</span></dt>
@@ -173,19 +178,22 @@
 <p>Use this when you have the user’s details.
 Variables user and password are strings.
 Raises a ValueError when incorrect details are passed.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">user</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your username?&quot;</span><span class="p">)</span>
-<span class="n">password</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is your password?&quot;</span><span class="p">)</span>
-<span class="k">try</span><span class="p">:</span>
-        <span class="n">login</span><span class="p">(</span><span class="n">user</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Logged in&quot;</span><span class="p">)</span>
-        <span class="c1">#Runs if they login correctly.</span>
-<span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
-        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Incorrect username or password&quot;</span><span class="p">)</span>
-        <span class="c1">#Runs if they fail to login</span>
-</pre></div>
-</div>
-<div class="toctree-wrapper compound">
-</div>
+<p>Example:
+.. code-block:: python</p>
+<blockquote>
+<div><p>user = input(“What is your username?”)
+password = input(“What is your password?”)
+try:</p>
+<blockquote>
+<div>login(user, password)
+print(“Logged in”)
+#Runs if they login correctly.</div></blockquote>
+<dl class="docutils">
+<dt>except ValueError:</dt>
+<dd>print(“Incorrect username or password”)
+#Runs if they fail to login</dd>
+</dl>
+</div></blockquote>
 </div>
 
 
@@ -195,6 +203,8 @@ Raises a ValueError when incorrect details are passed.</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="register.html" class="btn btn-neutral float-right" title="Register" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to pyaccounts’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

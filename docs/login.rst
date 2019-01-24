@@ -9,6 +9,7 @@ Login
 Use this when you don't have the user's details, it will prompt them to enter their details.
 Raises a ValueError when login failed.
 
+Example:
 .. code-block:: python
 
 	try:
@@ -23,6 +24,7 @@ Use this when you have the user's details.
 Variables user and password are strings.
 Raises a ValueError when incorrect details are passed.
 
+Example:
 .. code-block:: python
 	
 	user = input("What is your username?")

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to pyaccounts’s documentation! &mdash; pyaccounts 0.2 documentation</title>
+  <title>Register &mdash; pyaccounts 0.2 documentation</title>
   
 
   
@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Login" href="login.html" /> 
+    <link rel="prev" title="Login" href="login.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -48,7 +48,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> pyaccounts
+            <a href="index.html" class="icon icon-home"> pyaccounts
           
 
           
@@ -78,9 +78,9 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
-<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Register</a></li>
 </ul>
 
             
@@ -95,7 +95,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">pyaccounts</a>
+          <a href="index.html">pyaccounts</a>
         
       </nav>
 
@@ -124,15 +124,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#">Docs</a> &raquo;</li>
+      <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Welcome to pyaccounts’s documentation!</li>
+      <li>Register</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/register.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -145,15 +145,27 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-pyaccounts-s-documentation">
-<h1>Welcome to pyaccounts’s documentation!<a class="headerlink" href="#welcome-to-pyaccounts-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>Pyaccounts is a python module designed to make integrating user accounts into your software easy. Pyaccounts uses md5 encryption to secure user data.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="login.html">Login</a></li>
-<li class="toctree-l1"><a class="reference internal" href="register.html">Register</a></li>
-</ul>
+  <div class="section" id="register">
+<h1>Register<a class="headerlink" href="#register" title="Permalink to this headline">¶</a></h1>
+<dl class="data">
+<dt id="registerui">
+<code class="descname">registerui</code><span class="sig-paren">(</span><em>#</em><span class="sig-paren">)</span><a class="headerlink" href="#registerui" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The # in the brackets is not meant to be used, readthedocs won’t let me do two brackets by themselves.</p>
 </div>
+<p>Use this when you don’t have the user’s details, it will prompt them to enter their details.</p>
+<p>Example:</p>
+<dl class="data">
+<dt>
+<code class="descname">register</code><span class="sig-paren">(</span><em>user</em>, <em>password</em><span class="sig-paren">)</span></dt>
+<dd></dd></dl>
+
+<p>Use this when you have the user’s details.
+Variables user and password are strings.</p>
+<p>Example:</p>
 </div>
 
 
@@ -164,8 +176,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="login.html" class="btn btn-neutral float-right" title="Login" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
+        <a href="login.html" class="btn btn-neutral" title="Login" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

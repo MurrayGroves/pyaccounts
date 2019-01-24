@@ -17,7 +17,7 @@ def loginui():
     m.update(encoded)
     if str(m.digest()) == content["password"]:
         print("Successfully logged in")
-        return
+        return user, password
 
     else:
         print("Incorrect username or password")
@@ -35,7 +35,7 @@ def login(user, password):
     encoded = password.encode('utf-8')
     m.update(encoded)
     if str(m.digest()) == content["password"]:
-        return
+        return user, password
 
     else:
         raise ValueError('Incorrect username or password')
