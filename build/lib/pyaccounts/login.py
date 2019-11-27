@@ -50,23 +50,6 @@ def login(user, password):
     else:
         return 'error','error'
 
-    """
-    if os.path.exists("Data") == False:
-        os.mkdir("Data")
-    f = open("Data/{}.json".format(user), "r")
-    content = f.read()
-    content = json.loads(content)
-    m = hashlib.md5()
-    encoded = password.encode('utf-8')
-    m.update(encoded)
-    if str(m.digest()) == content["password"]:
-        return user, password
-
-    else:
-        raise ValueError('Incorrect username or password')
-        return"""
-
-
 def loginui():
     """Login to an account with user defined details:"""
 
