@@ -1,33 +1,51 @@
-import login
-import register
-import config
+#Import module
+import pyaccounts
 
-import time
-import json
-import os
-import hashlib
+
+"""
+THIS IS A DEMO FILE
+
+This file is an example of how to use the module
+
+"""
+
 
 def main():
+    #If user wants to register, call registerui
     if input("Do you want to register? (Y/N)").lower() == "y":
-        register.regui()
+        pyaccounts.regui()
 
-    user,password = login.loginui()
+    #Get username and password from loginui
+    user,password = pyaccounts.loginui()
+    #While password or username incorrect; retry
     while user == "error":
-        user,password = login.loginui()
+        user,password = pyaccounts.loginui()
 
+    #Permanent loop
     while True:
+        #Ask user what they want to do
         choice = input("What do you want to do? (login, register, config)")
+
+        #If user wants to login, call loginui
         if choice == "login":
-            login.loginui()
+            pyaccounts.loginui()
 
+        #If user wants to register, call regui
         elif choice == "register":
-            register.regui()
+            pyaccounts.regui()
 
+        #If user wants to write a config file, call writeconf with their requested data
         elif choice == "writeconf":
             name = input("name")
             value = input("value")
-            config.writeconf(user, password, name, value)
+            pyaccounts.writeconf(user, password, name, value)
 
+        #If user wants to get a config file, call readconf with requested name
+        elif choice =="readconf":
+            name = input("name")
+            print(pyaccounts.readconf(user, password, name))
+
+        #If choice invalid, inform user
         else:
             print("Invalid Choice")
 

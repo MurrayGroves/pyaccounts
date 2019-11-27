@@ -1,11 +1,13 @@
 # Pyaccounts
 # ===IN PROGRESS===
-Hey there, this is a module to help you easily integrate encrypted ([**MD5**](https://en.wikipedia.org/wiki/MD5) hashed passwords) accounts into your application.
-Encrypted user config coming soon!
+# All code works but documentation is still in progress
+
+Hey there, this is a package to help you easily integrate encrypted ([**SHA224**](https://en.wikipedia.org/wiki/SHA-2) hashed passwords) accounts with per account encrypted data storage into your application.
 
 ### File Locations
-Library code is located in /build/lib/pyaccounts
+Package code is located in /build/lib/pyaccounts
 
 Documentation (*in progress*) is located in /docs
 
-The latest .egg is located in /dist
+
+To try out the package, copy paste /build/lib/pyaccounts into %localappdata%/Programs/Python/Python36/Lib/site-packages
